@@ -7,12 +7,17 @@
 //
 
 #import "MEMRChoiceViewController.h"
+#import "UIViewController+animateView.h"
 
 @interface MEMRChoiceViewController ()
-
 @end
 
 @implementation MEMRChoiceViewController
+@synthesize homeView;
+@synthesize CommunityView;
+@synthesize topicsView;
+@synthesize aboutView;
+@synthesize profileView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,11 +31,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    [self animateViewDownFromTop:self.homeView withDelay:0.5];
+    [self animateViewDownFromTop:self.CommunityView withDelay:0.6];
+    [self animateViewDownFromTop:self.topicsView withDelay:0.7];
+    [self animateViewDownFromTop:self.aboutView withDelay:0.8];
+    [self animateViewDownFromTop:self.profileView withDelay:0.9];
 }
 
 - (void)viewDidUnload
 {
+    [self setHomeView:nil];
+    [self setCommunityView:nil];
+    [self setTopicsView:nil];
+    [self setAboutView:nil];
+    [self setProfileView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }

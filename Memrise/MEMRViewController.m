@@ -7,6 +7,7 @@
 //
 
 #import "MEMRViewController.h"
+#import "UIViewController+animateView.h"
 #import <QuartzCore/QuartzCore.h>
 #import <AudioToolbox/AudioToolbox.h>
 
@@ -26,12 +27,25 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    [self gestureSetup];
     [self configureWelcomeView];
     [self configureSound];
     [self welcomeSound];
     [self animateViewUpFromBottom:self.welcomeView withDelay:1.0];
 }
+
+- (void)gestureSetup
+{
+    // location tap
+    UITapGestureRecognizer *tap             = [[UITapGestureRecognizer alloc]
+                                               initWithTarget:self action:@selector(pushView)];
+    [self.view addGestureRecognizer:tap];
+
+}
+
+- (void)pushView
+{
+    [self performSegueWithIdentifier:@"welcomeToChoiceSegue" sender:self];
 }
 
 - (void)configureWelcomeView

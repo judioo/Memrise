@@ -25,6 +25,12 @@
 		D537C29E15D513870049F319 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D537C29D15D513870049F319 /* AudioToolbox.framework */; };
 		D537C2A015D513E40049F319 /* chimes.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D537C29F15D513E40049F319 /* chimes.mp3 */; };
 		D537C2A215D516460049F319 /* cave-logo_small.png in Resources */ = {isa = PBXBuildFile; fileRef = D537C2A115D516460049F319 /* cave-logo_small.png */; };
+		D537C2A415D542670049F319 /* home-active.png in Resources */ = {isa = PBXBuildFile; fileRef = D537C2A315D542670049F319 /* home-active.png */; };
+		D537C2A715D553D10049F319 /* MEMRChoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D537C2A615D553D10049F319 /* MEMRChoiceViewController.m */; };
+		D537C2AD15D557560049F319 /* ic_user.png in Resources */ = {isa = PBXBuildFile; fileRef = D537C2AC15D557560049F319 /* ic_user.png */; };
+		D537C2B515D558E00049F319 /* topic.png in Resources */ = {isa = PBXBuildFile; fileRef = D537C2B415D558E00049F319 /* topic.png */; };
+		D537C2B715D559360049F319 /* about.png in Resources */ = {isa = PBXBuildFile; fileRef = D537C2B615D559360049F319 /* about.png */; };
+		D537C2B915D559A20049F319 /* community.png in Resources */ = {isa = PBXBuildFile; fileRef = D537C2B815D559A20049F319 /* community.png */; };
 		D537C2BC15D56BE70049F319 /* UIViewController+animateView.m in Sources */ = {isa = PBXBuildFile; fileRef = D537C2BB15D56BE70049F319 /* UIViewController+animateView.m */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +70,13 @@
 		D537C29D15D513870049F319 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		D537C29F15D513E40049F319 /* chimes.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chimes.mp3; sourceTree = "<group>"; };
 		D537C2A115D516460049F319 /* cave-logo_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cave-logo_small.png"; path = "../cave-logo_small.png"; sourceTree = "<group>"; };
+		D537C2A315D542670049F319 /* home-active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-active.png"; sourceTree = "<group>"; };
+		D537C2A515D553D10049F319 /* MEMRChoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEMRChoiceViewController.h; sourceTree = "<group>"; };
+		D537C2A615D553D10049F319 /* MEMRChoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEMRChoiceViewController.m; sourceTree = "<group>"; };
+		D537C2AC15D557560049F319 /* ic_user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_user.png; sourceTree = "<group>"; };
+		D537C2B415D558E00049F319 /* topic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topic.png; sourceTree = "<group>"; };
+		D537C2B615D559360049F319 /* about.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about.png; sourceTree = "<group>"; };
+		D537C2B815D559A20049F319 /* community.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = community.png; sourceTree = "<group>"; };
 		D537C2BA15D56BE70049F319 /* UIViewController+animateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+animateView.h"; sourceTree = "<group>"; };
 		D537C2BB15D56BE70049F319 /* UIViewController+animateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+animateView.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -133,6 +146,9 @@
 				D537C26D15D4E6E10049F319 /* MainStoryboard.storyboard */,
 				D537C27015D4E6E10049F319 /* MEMRViewController.h */,
 				D537C27115D4E6E10049F319 /* MEMRViewController.m */,
+				D537C2A515D553D10049F319 /* MEMRChoiceViewController.h */,
+				D537C2A615D553D10049F319 /* MEMRChoiceViewController.m */,
+				D537C2BD15D56C560049F319 /* Categories */,
 				D537C26215D4E6E10049F319 /* Supporting Files */,
 			);
 			path = Memrise;
@@ -141,6 +157,11 @@
 		D537C26215D4E6E10049F319 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D537C2B615D559360049F319 /* about.png */,
+				D537C2B415D558E00049F319 /* topic.png */,
+				D537C2B815D559A20049F319 /* community.png */,
+				D537C2AC15D557560049F319 /* ic_user.png */,
+				D537C2A315D542670049F319 /* home-active.png */,
 				D537C2A115D516460049F319 /* cave-logo_small.png */,
 				D537C29F15D513E40049F319 /* chimes.mp3 */,
 				D537C29315D4F58E0049F319 /* Memrise_BETA_72dpi.png */,
@@ -259,6 +280,11 @@
 				D537C29815D501D80049F319 /* hills.png in Resources */,
 				D537C2A015D513E40049F319 /* chimes.mp3 in Resources */,
 				D537C2A215D516460049F319 /* cave-logo_small.png in Resources */,
+				D537C2A415D542670049F319 /* home-active.png in Resources */,
+				D537C2AD15D557560049F319 /* ic_user.png in Resources */,
+				D537C2B515D558E00049F319 /* topic.png in Resources */,
+				D537C2B715D559360049F319 /* about.png in Resources */,
+				D537C2B915D559A20049F319 /* community.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +322,8 @@
 				D537C26815D4E6E10049F319 /* main.m in Sources */,
 				D537C26C15D4E6E10049F319 /* MEMRAppDelegate.m in Sources */,
 				D537C27215D4E6E10049F319 /* MEMRViewController.m in Sources */,
+				D537C2A715D553D10049F319 /* MEMRChoiceViewController.m in Sources */,
+				D537C2BC15D56BE70049F319 /* UIViewController+animateView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
