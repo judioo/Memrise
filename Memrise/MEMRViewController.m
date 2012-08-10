@@ -50,8 +50,12 @@
 
 - (void)animateUp:(UIView *)tView
 {
+    // if the passed view does not have a superview return
+    if(!tView.superview)
+        return;
+    
     CGRect currentRect  = [tView frame];
-    int bottom          = self.view.bounds.size.height;
+    int bottom          = tView.superview.bounds.size.height;
     
     tView.frame         = CGRectMake(
                                      currentRect.origin.x, 
