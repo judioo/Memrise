@@ -123,7 +123,7 @@
                         <outlet property="homeView" destination="bCa-E4-ZYK" id="s6n-N8-Bpy"/>
                         <outlet property="profileView" destination="shB-B7-BUF" id="RKz-gJ-C3s"/>
                         <outlet property="topicsView" destination="xTn-fZ-B3P" id="ed9-2h-tTJ"/>
-                        <segue destination="mcY-M3-l1M" kind="modal" identifier="choiceToQuizSegue" id="0IF-8y-8Lg"/>
+                        <segue destination="mcY-M3-l1M" kind="modal" identifier="choiceToQuizSegue" modalTransitionStyle="crossDissolve" id="0IF-8y-8Lg"/>
                     </connections>
                 </viewController>
             </objects>
@@ -211,6 +211,23 @@
         <image name="spanish.png" width="100" height="100"/>
         <image name="topic.png" width="32" height="32"/>
     </resources>
+    <classes>
+        <class className="MEMRChoiceViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MEMRChoiceViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="CommunityView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="SpanishImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="SpanishLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="aboutView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="homeView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="profileView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="topicsView" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="MEMRViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MEMRViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
