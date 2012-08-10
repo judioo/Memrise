@@ -31,8 +31,26 @@
     [welcomeView addSubview:imageView];
     [welcomeView sendSubviewToBack:imageView];
     
+    [self animateIn:welcomeView];
+    
 }
 
+- (void)animateIn:(UIView *)tView
+{
+    CGRect currentRect  = [tView frame];
+    int bottom          = self.view.bounds.size.height;
+    
+    tView.frame         = CGRectMake(
+                                     currentRect.origin.x, 
+                                     bottom, 
+                                     currentRect.size.width, 
+                                     currentRect.size.height);
+    
+    [UIView animateWithDuration:1.0 animations:^{
+        tView.frame  = currentRect;
+    }];
+    
+    
 }
 
 - (void)viewDidUnload
