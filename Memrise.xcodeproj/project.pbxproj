@@ -150,11 +150,11 @@
 			children = (
 				D537C26A15D4E6E10049F319 /* MEMRAppDelegate.h */,
 				D537C26B15D4E6E10049F319 /* MEMRAppDelegate.m */,
-				D537C26D15D4E6E10049F319 /* MainStoryboard.storyboard */,
 				D537C27015D4E6E10049F319 /* MEMRViewController.h */,
 				D537C27115D4E6E10049F319 /* MEMRViewController.m */,
 				D537C2A515D553D10049F319 /* MEMRChoiceViewController.h */,
 				D537C2A615D553D10049F319 /* MEMRChoiceViewController.m */,
+				D537C26D15D4E6E10049F319 /* MainStoryboard.storyboard */,
 				D537C2BD15D56C560049F319 /* Categories */,
 				D537C26215D4E6E10049F319 /* Supporting Files */,
 			);

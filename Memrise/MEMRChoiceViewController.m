@@ -36,8 +36,32 @@
     [super viewDidLoad];
     [self formatSubViews];
     [self configureTouch];
+    [self setImageLink];
     [self animateViews];
 }
+
+- (void)setImageLink
+{
+    self.SpanishImage.userInteractionEnabled    = YES;
+    self.SpanishLabel.userInteractionEnabled    = YES;
+
+    
+    UITapGestureRecognizer *ImageTap        = [[UITapGestureRecognizer alloc]
+                                               initWithTarget:self action:@selector(pushView)];
+    
+    UITapGestureRecognizer *labelTap        = [[UITapGestureRecognizer alloc]
+                                               initWithTarget:self action:@selector(pushView)];
+
+    [self.SpanishImage addGestureRecognizer:ImageTap];
+    [self.SpanishLabel addGestureRecognizer:labelTap];
+
+}
+
+- (void)pushView
+{
+    [self performSegueWithIdentifier:@"choiceToQuizSegue" sender:self];
+}
+
 
 - (void)formatSubViews
 {
