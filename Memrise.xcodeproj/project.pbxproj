@@ -20,6 +20,8 @@
 		D537C27C15D4E6E10049F319 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D537C25D15D4E6E10049F319 /* Foundation.framework */; };
 		D537C28415D4E6E10049F319 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D537C28215D4E6E10049F319 /* InfoPlist.strings */; };
 		D537C28715D4E6E10049F319 /* MemriseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D537C28615D4E6E10049F319 /* MemriseTests.m */; };
+		D537C29415D4F58E0049F319 /* Memrise_BETA_72dpi.png in Resources */ = {isa = PBXBuildFile; fileRef = D537C29315D4F58E0049F319 /* Memrise_BETA_72dpi.png */; };
+		D537C29815D501D80049F319 /* hills.png in Resources */ = {isa = PBXBuildFile; fileRef = D537C29715D501D80049F319 /* hills.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,21 +39,24 @@
 		D537C25B15D4E6E10049F319 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D537C25D15D4E6E10049F319 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D537C25F15D4E6E10049F319 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		D537C26315D4E6E10049F319 /* Memrise-Info.plist */ = {isa = PBXFileReference; path = "Memrise-Info.plist"; sourceTree = "<group>"; };
+		D537C26315D4E6E10049F319 /* Memrise-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Memrise-Info.plist"; sourceTree = "<group>"; };
 		D537C26515D4E6E10049F319 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D537C26715D4E6E10049F319 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D537C26915D4E6E10049F319 /* Memrise-Prefix.pch */ = {isa = PBXFileReference; path = "Memrise-Prefix.pch"; sourceTree = "<group>"; };
-		D537C26A15D4E6E10049F319 /* MEMRAppDelegate.h */ = {isa = PBXFileReference; path = MEMRAppDelegate.h; sourceTree = "<group>"; };
+		D537C26915D4E6E10049F319 /* Memrise-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Memrise-Prefix.pch"; sourceTree = "<group>"; };
+		D537C26A15D4E6E10049F319 /* MEMRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MEMRAppDelegate.h; sourceTree = "<group>"; };
 		D537C26B15D4E6E10049F319 /* MEMRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MEMRAppDelegate.m; sourceTree = "<group>"; };
 		D537C26E15D4E6E10049F319 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		D537C27015D4E6E10049F319 /* MEMRViewController.h */ = {isa = PBXFileReference; path = MEMRViewController.h; sourceTree = "<group>"; };
+		D537C27015D4E6E10049F319 /* MEMRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MEMRViewController.h; sourceTree = "<group>"; };
 		D537C27115D4E6E10049F319 /* MEMRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MEMRViewController.m; sourceTree = "<group>"; };
 		D537C27815D4E6E10049F319 /* MemriseTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemriseTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D537C27915D4E6E10049F319 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		D537C28115D4E6E10049F319 /* MemriseTests-Info.plist */ = {isa = PBXFileReference; path = "MemriseTests-Info.plist"; sourceTree = "<group>"; };
+		D537C28115D4E6E10049F319 /* MemriseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MemriseTests-Info.plist"; sourceTree = "<group>"; };
 		D537C28315D4E6E10049F319 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D537C28515D4E6E10049F319 /* MemriseTests.h */ = {isa = PBXFileReference; path = MemriseTests.h; sourceTree = "<group>"; };
+		D537C28515D4E6E10049F319 /* MemriseTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemriseTests.h; sourceTree = "<group>"; };
 		D537C28615D4E6E10049F319 /* MemriseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemriseTests.m; sourceTree = "<group>"; };
+		D537C29015D4EB400049F319 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D537C29315D4F58E0049F319 /* Memrise_BETA_72dpi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Memrise_BETA_72dpi.png; sourceTree = "<group>"; };
+		D537C29715D501D80049F319 /* hills.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hills.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +86,7 @@
 		D537C24C15D4E6E10049F319 = {
 			isa = PBXGroup;
 			children = (
+				D537C29015D4EB400049F319 /* QuartzCore.framework */,
 				D537C26115D4E6E10049F319 /* Memrise */,
 				D537C27F15D4E6E10049F319 /* MemriseTests */,
 				D537C25A15D4E6E10049F319 /* Frameworks */,
@@ -124,6 +130,8 @@
 		D537C26215D4E6E10049F319 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D537C29315D4F58E0049F319 /* Memrise_BETA_72dpi.png */,
+				D537C29715D501D80049F319 /* hills.png */,
 				D537C26315D4E6E10049F319 /* Memrise-Info.plist */,
 				D537C26415D4E6E10049F319 /* InfoPlist.strings */,
 				D537C26715D4E6E10049F319 /* main.m */,
@@ -225,6 +233,8 @@
 			files = (
 				D537C26615D4E6E10049F319 /* InfoPlist.strings in Resources */,
 				D537C26F15D4E6E10049F319 /* MainStoryboard.storyboard in Resources */,
+				D537C29415D4F58E0049F319 /* Memrise_BETA_72dpi.png in Resources */,
+				D537C29815D501D80049F319 /* hills.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

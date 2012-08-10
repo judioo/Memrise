@@ -7,6 +7,9 @@
 //
 
 #import "MEMRViewController.h"
+#import <QuartzCore/QuartzCore.h>
+
+#define kWelcomeView 1
 
 @interface MEMRViewController ()
 
@@ -17,7 +20,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    UIView *welcomeView = [self.view viewWithTag:kWelcomeView];
+    
+    welcomeView.layer.cornerRadius  = 26.0f;
+    welcomeView.layer.masksToBounds = YES;
+    
+    UIImage *image  = [UIImage imageNamed:@"hills.png"];
+    UIImageView *imageView  = [[UIImageView alloc] initWithImage:image];
+    
+    [welcomeView addSubview:imageView];
+    [welcomeView sendSubviewToBack:imageView];
+    
+}
+
 }
 
 - (void)viewDidUnload
