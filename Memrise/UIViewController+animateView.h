@@ -11,4 +11,5 @@
 @interface UIViewController (animateView)
 - (void)animateViewUpFromBottom:(UIView *)sView withDelay:(double)delay;
 - (void)animateViewDownFromTop:(UIView *)sView  withDelay:(double)delay;
+- (void)animateShake:(UIView *)sView;
 @end

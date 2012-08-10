@@ -50,7 +50,7 @@
 - (void)accessDenied:(UITapGestureRecognizer *)gesture
 {
     NSLog(@"denied");
-    [self animateViewDownFromTop:gesture.view withDelay:1.0];
+    [self animateShake:gesture.view];
 }
 
 - (void)viewDidUnload
