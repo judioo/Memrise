@@ -16,36 +16,39 @@
     SystemSoundID magicChimesID;
 
 }
-
-@end
-
-
-@interface MEMRViewController ()
+@property (nonatomic, strong) UIView *welcomeView;
 
 @end
 
 @implementation MEMRViewController
+@synthesize welcomeView;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    UIView *welcomeView = [self.view viewWithTag:kWelcomeView];
     
-    welcomeView.layer.cornerRadius  = 26.0f;
-    welcomeView.layer.masksToBounds = YES;
+    [self configureWelcomeView];
+    [self configureSound];
+    [self animateUp:self.welcomeView];
+    
+}
+
+- (void)configureWelcomeView
+{
+    self.welcomeView = [self.view viewWithTag:kWelcomeView];
+    
+    self.welcomeView.layer.cornerRadius  = 26.0f;
+    self.welcomeView.layer.masksToBounds = YES;
     
     UIImage *image  = [UIImage imageNamed:@"hills.png"];
     UIImageView *imageView  = [[UIImageView alloc] initWithImage:image];
     
-    [welcomeView addSubview:imageView];
-    [welcomeView sendSubviewToBack:imageView];
-    
-    [self configureSound];
-    [self animateIn:welcomeView];
-    
+    [self.welcomeView addSubview:imageView];
+    [self.welcomeView sendSubviewToBack:imageView];
+ 
 }
 
-- (void)animateIn:(UIView *)tView
+- (void)animateUp:(UIView *)tView
 {
     CGRect currentRect  = [tView frame];
     int bottom          = self.view.bounds.size.height;
@@ -94,7 +97,7 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
 @end
