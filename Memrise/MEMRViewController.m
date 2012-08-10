@@ -30,7 +30,7 @@
     [self configureWelcomeView];
     [self configureSound];
     [self welcomeSound];
-    [self animateViewUpFromBottom:self.welcomeView];
+    [self animateViewUpFromBottom:self.welcomeView withDelay:1.0];
 }
 }
 

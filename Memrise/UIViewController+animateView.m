@@ -10,7 +10,7 @@
 
 @implementation UIViewController (animateView)
 
-- (void)animateViewUpFromBottom:(UIView *)sView
+- (void)animateViewUpFromBottom:(UIView *)sView withDelay:(double)delay
 {
     // if the passed view does not have a superview return
     if(!sView.superview)
@@ -25,16 +25,33 @@
                                      currentRect.size.width, 
                                      currentRect.size.height);
     
-    [UIView animateWithDuration:1.0 animations:^{
+    [UIView animateWithDuration:delay animations:^{
         sView.frame  = currentRect;
     }];
     
     
 }
 
-- (void)animateViewDownFromTop:(UIView *)sView
+- (void)animateViewDownFromTop:(UIView *)sView withDelay:(double)delay
 {
+    if(!sView.superview)
+        return;
     
+    CGRect currentRect  = [sView frame];
+    
+    // superviews y cords minus sView's height
+    int top             = sView.superview.bounds.origin.y - 
+                            currentRect.size.height;
+    
+    sView.frame         = CGRectMake(
+                                     currentRect.origin.x, 
+                                     top, 
+                                     currentRect.size.width, 
+                                     currentRect.size.height);
+    
+    [UIView animateWithDuration:delay animations:^{
+        sView.frame  = currentRect;
+    }];
 }
 
 @end
