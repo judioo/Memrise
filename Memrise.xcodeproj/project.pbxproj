@@ -25,6 +25,7 @@
 		D537C29E15D513870049F319 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D537C29D15D513870049F319 /* AudioToolbox.framework */; };
 		D537C2A015D513E40049F319 /* chimes.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D537C29F15D513E40049F319 /* chimes.mp3 */; };
 		D537C2A215D516460049F319 /* cave-logo_small.png in Resources */ = {isa = PBXBuildFile; fileRef = D537C2A115D516460049F319 /* cave-logo_small.png */; };
+		D537C2BC15D56BE70049F319 /* UIViewController+animateView.m in Sources */ = {isa = PBXBuildFile; fileRef = D537C2BB15D56BE70049F319 /* UIViewController+animateView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		D537C29D15D513870049F319 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		D537C29F15D513E40049F319 /* chimes.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chimes.mp3; sourceTree = "<group>"; };
 		D537C2A115D516460049F319 /* cave-logo_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cave-logo_small.png"; path = "../cave-logo_small.png"; sourceTree = "<group>"; };
+		D537C2BA15D56BE70049F319 /* UIViewController+animateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+animateView.h"; sourceTree = "<group>"; };
+		D537C2BB15D56BE70049F319 /* UIViewController+animateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+animateView.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +170,15 @@
 				D537C28215D4E6E10049F319 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D537C2BD15D56C560049F319 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				D537C2BA15D56BE70049F319 /* UIViewController+animateView.h */,
+				D537C2BB15D56BE70049F319 /* UIViewController+animateView.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -29,8 +29,9 @@
     
     [self configureWelcomeView];
     [self configureSound];
-    [self animateUp:self.welcomeView];
-    
+    [self welcomeSound];
+    [self animateViewUpFromBottom:self.welcomeView];
+}
 }
 
 - (void)configureWelcomeView
@@ -48,28 +49,6 @@
  
 }
 
-- (void)animateUp:(UIView *)tView
-{
-    // if the passed view does not have a superview return
-    if(!tView.superview)
-        return;
-    
-    CGRect currentRect  = [tView frame];
-    int bottom          = tView.superview.bounds.size.height;
-    
-    tView.frame         = CGRectMake(
-                                     currentRect.origin.x, 
-                                     bottom, 
-                                     currentRect.size.width, 
-                                     currentRect.size.height);
-    
-    [self welcomeSound];
-    [UIView animateWithDuration:1.0 animations:^{
-        tView.frame  = currentRect;
-    }];
-    
-    
-}
 
 - (void)welcomeSound
 {
