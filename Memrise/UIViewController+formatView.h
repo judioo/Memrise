@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface UIViewController (formatView)
-
+- (void)roundViewsCorner:(UIView *)tView withRadius:(float)rad;
+- (void)roundViewsBottomCorner:(UIView *)tView withRadius:(float)rad;
 @end

@@ -33,6 +33,8 @@
 		D537C2B915D559A20049F319 /* community.png in Resources */ = {isa = PBXBuildFile; fileRef = D537C2B815D559A20049F319 /* community.png */; };
 		D537C2BC15D56BE70049F319 /* UIViewController+animateView.m in Sources */ = {isa = PBXBuildFile; fileRef = D537C2BB15D56BE70049F319 /* UIViewController+animateView.m */; };
 		D537C2BF15D5A7080049F319 /* spanish.png in Resources */ = {isa = PBXBuildFile; fileRef = D537C2BE15D5A7070049F319 /* spanish.png */; };
+		D537C2C215D5AE100049F319 /* UIViewController+formatView.m in Sources */ = {isa = PBXBuildFile; fileRef = D537C2C115D5AE100049F319 /* UIViewController+formatView.m */; };
+		D537C2C315D5B78A0049F319 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D537C29015D4EB400049F319 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,8 @@
 		D537C2BA15D56BE70049F319 /* UIViewController+animateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+animateView.h"; sourceTree = "<group>"; };
 		D537C2BB15D56BE70049F319 /* UIViewController+animateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+animateView.m"; sourceTree = "<group>"; };
 		D537C2BE15D5A7070049F319 /* spanish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spanish.png; sourceTree = "<group>"; };
+		D537C2C015D5AE100049F319 /* UIViewController+formatView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+formatView.h"; sourceTree = "<group>"; };
+		D537C2C115D5AE100049F319 /* UIViewController+formatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+formatView.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D537C2C315D5B78A0049F319 /* QuartzCore.framework in Frameworks */,
 				D537C29E15D513870049F319 /* AudioToolbox.framework in Frameworks */,
 				D537C25C15D4E6E10049F319 /* UIKit.framework in Frameworks */,
 				D537C25E15D4E6E10049F319 /* Foundation.framework in Frameworks */,
@@ -199,6 +204,8 @@
 		D537C2BD15D56C560049F319 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				D537C2C015D5AE100049F319 /* UIViewController+formatView.h */,
+				D537C2C115D5AE100049F319 /* UIViewController+formatView.m */,
 				D537C2BA15D56BE70049F319 /* UIViewController+animateView.h */,
 				D537C2BB15D56BE70049F319 /* UIViewController+animateView.m */,
 			);
@@ -328,6 +335,7 @@
 				D537C27215D4E6E10049F319 /* MEMRViewController.m in Sources */,
 				D537C2A715D553D10049F319 /* MEMRChoiceViewController.m in Sources */,
 				D537C2BC15D56BE70049F319 /* UIViewController+animateView.m in Sources */,
+				D537C2C215D5AE100049F319 /* UIViewController+formatView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

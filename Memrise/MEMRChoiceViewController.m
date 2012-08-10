@@ -8,6 +8,7 @@
 
 #import "MEMRChoiceViewController.h"
 #import "UIViewController+animateView.h"
+#import "UIViewController+formatView.h"
 
 @interface MEMRChoiceViewController ()
 @end
@@ -33,7 +34,22 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self formatSubViews];
     [self configureTouch];
+    [self animateViews];
+}
+
+- (void)formatSubViews
+{
+    [self roundViewsBottomCorner:self.homeView withRadius:5.0f];
+    [self roundViewsBottomCorner:self.CommunityView withRadius:5.0f];
+    [self roundViewsBottomCorner:self.topicsView withRadius:5.0f];
+    [self roundViewsBottomCorner:self.aboutView withRadius:5.0f];
+    [self roundViewsBottomCorner:self.profileView withRadius:5.0f];
+}
+
+- (void)animateViews 
+{
     [self animateViewDownFromTop:self.homeView withDelay:0.5];
     [self animateViewDownFromTop:self.CommunityView withDelay:0.6];
     [self animateViewDownFromTop:self.topicsView withDelay:0.7];
