@@ -31,11 +31,26 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self configureTouch];
     [self animateViewDownFromTop:self.homeView withDelay:0.5];
     [self animateViewDownFromTop:self.CommunityView withDelay:0.6];
     [self animateViewDownFromTop:self.topicsView withDelay:0.7];
     [self animateViewDownFromTop:self.aboutView withDelay:0.8];
     [self animateViewDownFromTop:self.profileView withDelay:0.9];
+}
+
+- (void)configureTouch
+{
+    UITapGestureRecognizer *failedtap             = [[UITapGestureRecognizer alloc]
+                                               initWithTarget:self action:@selector(accessDenied:)];
+    [self.homeView addGestureRecognizer:failedtap];
+
+}
+
+- (void)accessDenied:(UITapGestureRecognizer *)gesture
+{
+    NSLog(@"denied");
+    [self animateViewDownFromTop:gesture.view withDelay:1.0];
 }
 
 - (void)viewDidUnload
