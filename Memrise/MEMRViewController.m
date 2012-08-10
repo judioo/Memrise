@@ -8,6 +8,7 @@
 
 #import "MEMRViewController.h"
 #import "UIViewController+animateView.h"
+#import "UIViewController+formatView.h"
 #import <QuartzCore/QuartzCore.h>
 #import <AudioToolbox/AudioToolbox.h>
 
@@ -40,7 +41,6 @@
     UITapGestureRecognizer *tap             = [[UITapGestureRecognizer alloc]
                                                initWithTarget:self action:@selector(pushView)];
     [self.view addGestureRecognizer:tap];
-
 }
 
 - (void)pushView
@@ -50,17 +50,15 @@
 
 - (void)configureWelcomeView
 {
-    self.welcomeView = [self.view viewWithTag:kWelcomeView];
-    
-    self.welcomeView.layer.cornerRadius  = 26.0f;
-    self.welcomeView.layer.masksToBounds = YES;
-    
-    UIImage *image  = [UIImage imageNamed:@"hills.png"];
+    self.welcomeView        = [self.view viewWithTag:kWelcomeView];
+        
+    [self roundViewsCorner:self.welcomeView withRadius:26.0f];
+        
+    UIImage *image          = [UIImage imageNamed:@"hills.png"];
     UIImageView *imageView  = [[UIImageView alloc] initWithImage:image];
     
     [self.welcomeView addSubview:imageView];
     [self.welcomeView sendSubviewToBack:imageView];
- 
 }
 
 
