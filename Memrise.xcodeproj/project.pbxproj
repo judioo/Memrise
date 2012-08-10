@@ -24,6 +24,7 @@
 		D537C29815D501D80049F319 /* hills.png in Resources */ = {isa = PBXBuildFile; fileRef = D537C29715D501D80049F319 /* hills.png */; };
 		D537C29E15D513870049F319 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D537C29D15D513870049F319 /* AudioToolbox.framework */; };
 		D537C2A015D513E40049F319 /* chimes.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D537C29F15D513E40049F319 /* chimes.mp3 */; };
+		D537C2A215D516460049F319 /* cave-logo_small.png in Resources */ = {isa = PBXBuildFile; fileRef = D537C2A115D516460049F319 /* cave-logo_small.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		D537C29715D501D80049F319 /* hills.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hills.png; sourceTree = "<group>"; };
 		D537C29D15D513870049F319 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		D537C29F15D513E40049F319 /* chimes.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chimes.mp3; sourceTree = "<group>"; };
+		D537C2A115D516460049F319 /* cave-logo_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cave-logo_small.png"; path = "../cave-logo_small.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 		D537C26215D4E6E10049F319 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D537C2A115D516460049F319 /* cave-logo_small.png */,
 				D537C29F15D513E40049F319 /* chimes.mp3 */,
 				D537C29315D4F58E0049F319 /* Memrise_BETA_72dpi.png */,
 				D537C29715D501D80049F319 /* hills.png */,
@@ -243,6 +246,7 @@
 				D537C29415D4F58E0049F319 /* Memrise_BETA_72dpi.png in Resources */,
 				D537C29815D501D80049F319 /* hills.png in Resources */,
 				D537C2A015D513E40049F319 /* chimes.mp3 in Resources */,
+				D537C2A215D516460049F319 /* cave-logo_small.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
