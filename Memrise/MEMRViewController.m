@@ -8,8 +8,17 @@
 
 #import "MEMRViewController.h"
 #import <QuartzCore/QuartzCore.h>
+#import <AudioToolbox/AudioToolbox.h>
 
 #define kWelcomeView 1
+
+@interface MEMRViewController () {
+    SystemSoundID magicChimesID;
+
+}
+
+@end
+
 
 @interface MEMRViewController ()
 
@@ -31,6 +40,7 @@
     [welcomeView addSubview:imageView];
     [welcomeView sendSubviewToBack:imageView];
     
+    [self configureSound];
     [self animateIn:welcomeView];
     
 }
@@ -46,6 +56,7 @@
                                      currentRect.size.width, 
                                      currentRect.size.height);
     
+    [self welcomeSound];
     [UIView animateWithDuration:1.0 animations:^{
         tView.frame  = currentRect;
     }];
@@ -53,11 +64,33 @@
     
 }
 
+- (void)welcomeSound
+{
+    AudioServicesPlayAlertSound(magicChimesID);
+}
+
+- (void)configureSound {
+    CFBundleRef mainbundle      = CFBundleGetMainBundle();
+    CFURLRef magicChimeSoundURL = CFBundleCopyResourceURL(mainbundle, 
+                                                          CFSTR("chimes"), 
+                                                          CFSTR("mp3"),
+                                                          NULL);
+    
+    AudioServicesCreateSystemSoundID(magicChimeSoundURL,&magicChimesID);
+    
+    CFRelease(magicChimeSoundURL);
+}
+
+
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
 }
+
+- (void)dealloc {
+    AudioServicesDisposeSystemSoundID(magicChimesID);
+}
+
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {

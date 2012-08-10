@@ -22,6 +22,8 @@
 		D537C28715D4E6E10049F319 /* MemriseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D537C28615D4E6E10049F319 /* MemriseTests.m */; };
 		D537C29415D4F58E0049F319 /* Memrise_BETA_72dpi.png in Resources */ = {isa = PBXBuildFile; fileRef = D537C29315D4F58E0049F319 /* Memrise_BETA_72dpi.png */; };
 		D537C29815D501D80049F319 /* hills.png in Resources */ = {isa = PBXBuildFile; fileRef = D537C29715D501D80049F319 /* hills.png */; };
+		D537C29E15D513870049F319 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D537C29D15D513870049F319 /* AudioToolbox.framework */; };
+		D537C2A015D513E40049F319 /* chimes.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D537C29F15D513E40049F319 /* chimes.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		D537C29015D4EB400049F319 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D537C29315D4F58E0049F319 /* Memrise_BETA_72dpi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Memrise_BETA_72dpi.png; sourceTree = "<group>"; };
 		D537C29715D501D80049F319 /* hills.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hills.png; sourceTree = "<group>"; };
+		D537C29D15D513870049F319 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D537C29F15D513E40049F319 /* chimes.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chimes.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D537C29E15D513870049F319 /* AudioToolbox.framework in Frameworks */,
 				D537C25C15D4E6E10049F319 /* UIKit.framework in Frameworks */,
 				D537C25E15D4E6E10049F319 /* Foundation.framework in Frameworks */,
 				D537C26015D4E6E10049F319 /* CoreGraphics.framework in Frameworks */,
@@ -86,7 +91,6 @@
 		D537C24C15D4E6E10049F319 = {
 			isa = PBXGroup;
 			children = (
-				D537C29015D4EB400049F319 /* QuartzCore.framework */,
 				D537C26115D4E6E10049F319 /* Memrise */,
 				D537C27F15D4E6E10049F319 /* MemriseTests */,
 				D537C25A15D4E6E10049F319 /* Frameworks */,
@@ -106,6 +110,8 @@
 		D537C25A15D4E6E10049F319 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D537C29D15D513870049F319 /* AudioToolbox.framework */,
+				D537C29015D4EB400049F319 /* QuartzCore.framework */,
 				D537C25B15D4E6E10049F319 /* UIKit.framework */,
 				D537C25D15D4E6E10049F319 /* Foundation.framework */,
 				D537C25F15D4E6E10049F319 /* CoreGraphics.framework */,
@@ -130,6 +136,7 @@
 		D537C26215D4E6E10049F319 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D537C29F15D513E40049F319 /* chimes.mp3 */,
 				D537C29315D4F58E0049F319 /* Memrise_BETA_72dpi.png */,
 				D537C29715D501D80049F319 /* hills.png */,
 				D537C26315D4E6E10049F319 /* Memrise-Info.plist */,
@@ -235,6 +242,7 @@
 				D537C26F15D4E6E10049F319 /* MainStoryboard.storyboard in Resources */,
 				D537C29415D4F58E0049F319 /* Memrise_BETA_72dpi.png in Resources */,
 				D537C29815D501D80049F319 /* hills.png in Resources */,
+				D537C2A015D513E40049F319 /* chimes.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
