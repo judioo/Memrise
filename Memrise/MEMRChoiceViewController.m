@@ -41,15 +41,22 @@
 
 - (void)configureTouch
 {
-    UITapGestureRecognizer *failedtap             = [[UITapGestureRecognizer alloc]
-                                               initWithTarget:self action:@selector(accessDenied:)];
-    [self.homeView addGestureRecognizer:failedtap];
+    [self setMenuAsDenied:self.homeView];
+    [self setMenuAsDenied:self.CommunityView];
+    [self setMenuAsDenied:self.topicsView];
+    [self setMenuAsDenied:self.aboutView];
+}
 
+- (void)setMenuAsDenied:(UIView *)dView
+{
+    // views cannot share an instance of a gesture recognizer
+    UITapGestureRecognizer *failedtap             = [[UITapGestureRecognizer alloc]
+                                                     initWithTarget:self action:@selector(accessDenied:)];
+    [dView addGestureRecognizer:failedtap];
 }
 
 - (void)accessDenied:(UITapGestureRecognizer *)gesture
 {
-    NSLog(@"denied");
     [self animateShake:gesture.view];
 }
 
