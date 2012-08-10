@@ -18,6 +18,8 @@
 @synthesize topicsView;
 @synthesize aboutView;
 @synthesize profileView;
+@synthesize SpanishImage;
+@synthesize SpanishLabel;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -67,6 +69,8 @@
     [self setTopicsView:nil];
     [self setAboutView:nil];
     [self setProfileView:nil];
+    [self setSpanishImage:nil];
+    [self setSpanishLabel:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }

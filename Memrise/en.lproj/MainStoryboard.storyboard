@@ -99,12 +99,25 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="spanish.png" id="Okt-rt-Et5">
+                                <rect key="frame" x="110" y="180" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Get started" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="j0U-BP-iGf">
+                                <rect key="frame" x="117" y="288" width="86" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.88582210589507737" green="1" blue="0.1939023704105366" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="KvX-vo-Vfd"/>
                     <connections>
                         <outlet property="CommunityView" destination="slt-vN-q87" id="kzD-Uu-nbL"/>
+                        <outlet property="SpanishImage" destination="Okt-rt-Et5" id="rkF-7y-dht"/>
+                        <outlet property="SpanishLabel" destination="j0U-BP-iGf" id="KDv-cI-M8q"/>
                         <outlet property="aboutView" destination="dDs-w8-zgy" id="Zot-SX-cRd"/>
                         <outlet property="homeView" destination="bCa-E4-ZYK" id="s6n-N8-Bpy"/>
                         <outlet property="profileView" destination="shB-B7-BUF" id="RKz-gJ-C3s"/>
@@ -121,8 +134,26 @@
         <image name="community.png" width="32" height="32"/>
         <image name="home-active.png" width="32" height="32"/>
         <image name="ic_user.png" width="32" height="32"/>
+        <image name="spanish.png" width="100" height="100"/>
         <image name="topic.png" width="32" height="32"/>
     </resources>
+    <classes>
+        <class className="MEMRChoiceViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MEMRChoiceViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="CommunityView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="SpanishImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="SpanishLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="aboutView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="homeView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="profileView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="topicsView" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="MEMRViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MEMRViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

@@ -14,5 +14,7 @@
 @property (strong, nonatomic) IBOutlet UIView *topicsView;
 @property (strong, nonatomic) IBOutlet UIView *aboutView;
 @property (strong, nonatomic) IBOutlet UIView *profileView;
+@property (strong, nonatomic) IBOutlet UIImageView *SpanishImage;
+@property (strong, nonatomic) IBOutlet UILabel *SpanishLabel;
 
 @end

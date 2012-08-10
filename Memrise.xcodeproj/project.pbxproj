@@ -32,6 +32,7 @@
 		D537C2B715D559360049F319 /* about.png in Resources */ = {isa = PBXBuildFile; fileRef = D537C2B615D559360049F319 /* about.png */; };
 		D537C2B915D559A20049F319 /* community.png in Resources */ = {isa = PBXBuildFile; fileRef = D537C2B815D559A20049F319 /* community.png */; };
 		D537C2BC15D56BE70049F319 /* UIViewController+animateView.m in Sources */ = {isa = PBXBuildFile; fileRef = D537C2BB15D56BE70049F319 /* UIViewController+animateView.m */; };
+		D537C2BF15D5A7080049F319 /* spanish.png in Resources */ = {isa = PBXBuildFile; fileRef = D537C2BE15D5A7070049F319 /* spanish.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		D537C2B815D559A20049F319 /* community.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = community.png; sourceTree = "<group>"; };
 		D537C2BA15D56BE70049F319 /* UIViewController+animateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+animateView.h"; sourceTree = "<group>"; };
 		D537C2BB15D56BE70049F319 /* UIViewController+animateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+animateView.m"; sourceTree = "<group>"; };
+		D537C2BE15D5A7070049F319 /* spanish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spanish.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 		D537C26215D4E6E10049F319 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D537C2BE15D5A7070049F319 /* spanish.png */,
 				D537C2B615D559360049F319 /* about.png */,
 				D537C2B415D558E00049F319 /* topic.png */,
 				D537C2B815D559A20049F319 /* community.png */,
@@ -285,6 +288,7 @@
 				D537C2B515D558E00049F319 /* topic.png in Resources */,
 				D537C2B715D559360049F319 /* about.png in Resources */,
 				D537C2B915D559A20049F319 /* community.png in Resources */,
+				D537C2BF15D5A7080049F319 /* spanish.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
