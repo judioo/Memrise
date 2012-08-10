@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D537C25C15D4E6E10049F319 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D537C25B15D4E6E10049F319 /* UIKit.framework */; };
+		D537C25E15D4E6E10049F319 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D537C25D15D4E6E10049F319 /* Foundation.framework */; };
+		D537C26015D4E6E10049F319 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D537C25F15D4E6E10049F319 /* CoreGraphics.framework */; };
+		D537C26615D4E6E10049F319 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D537C26415D4E6E10049F319 /* InfoPlist.strings */; };
+		D537C26815D4E6E10049F319 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D537C26715D4E6E10049F319 /* main.m */; };
+		D537C26C15D4E6E10049F319 /* MEMRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D537C26B15D4E6E10049F319 /* MEMRAppDelegate.m */; };
+		D537C26F15D4E6E10049F319 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D537C26D15D4E6E10049F319 /* MainStoryboard.storyboard */; };
+		D537C27215D4E6E10049F319 /* MEMRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D537C27115D4E6E10049F319 /* MEMRViewController.m */; };
+		D537C27A15D4E6E10049F319 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D537C27915D4E6E10049F319 /* SenTestingKit.framework */; };
+		D537C27B15D4E6E10049F319 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D537C25B15D4E6E10049F319 /* UIKit.framework */; };
+		D537C27C15D4E6E10049F319 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D537C25D15D4E6E10049F319 /* Foundation.framework */; };
+		D537C28415D4E6E10049F319 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D537C28215D4E6E10049F319 /* InfoPlist.strings */; };
+		D537C28715D4E6E10049F319 /* MemriseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D537C28615D4E6E10049F319 /* MemriseTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D537C27D15D4E6E10049F319 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D537C24E15D4E6E10049F319 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D537C25615D4E6E10049F319;
+			remoteInfo = Memrise;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D537C25715D4E6E10049F319 /* Memrise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memrise.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D537C25B15D4E6E10049F319 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D537C25D15D4E6E10049F319 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D537C25F15D4E6E10049F319 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D537C26315D4E6E10049F319 /* Memrise-Info.plist */ = {isa = PBXFileReference; path = "Memrise-Info.plist"; sourceTree = "<group>"; };
+		D537C26515D4E6E10049F319 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D537C26715D4E6E10049F319 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D537C26915D4E6E10049F319 /* Memrise-Prefix.pch */ = {isa = PBXFileReference; path = "Memrise-Prefix.pch"; sourceTree = "<group>"; };
+		D537C26A15D4E6E10049F319 /* MEMRAppDelegate.h */ = {isa = PBXFileReference; path = MEMRAppDelegate.h; sourceTree = "<group>"; };
+		D537C26B15D4E6E10049F319 /* MEMRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MEMRAppDelegate.m; sourceTree = "<group>"; };
+		D537C26E15D4E6E10049F319 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		D537C27015D4E6E10049F319 /* MEMRViewController.h */ = {isa = PBXFileReference; path = MEMRViewController.h; sourceTree = "<group>"; };
+		D537C27115D4E6E10049F319 /* MEMRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MEMRViewController.m; sourceTree = "<group>"; };
+		D537C27815D4E6E10049F319 /* MemriseTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemriseTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D537C27915D4E6E10049F319 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		D537C28115D4E6E10049F319 /* MemriseTests-Info.plist */ = {isa = PBXFileReference; path = "MemriseTests-Info.plist"; sourceTree = "<group>"; };
+		D537C28315D4E6E10049F319 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D537C28515D4E6E10049F319 /* MemriseTests.h */ = {isa = PBXFileReference; path = MemriseTests.h; sourceTree = "<group>"; };
+		D537C28615D4E6E10049F319 /* MemriseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemriseTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D537C25415D4E6E10049F319 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D537C25C15D4E6E10049F319 /* UIKit.framework in Frameworks */,
+				D537C25E15D4E6E10049F319 /* Foundation.framework in Frameworks */,
+				D537C26015D4E6E10049F319 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D537C27415D4E6E10049F319 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D537C27A15D4E6E10049F319 /* SenTestingKit.framework in Frameworks */,
+				D537C27B15D4E6E10049F319 /* UIKit.framework in Frameworks */,
+				D537C27C15D4E6E10049F319 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D537C24C15D4E6E10049F319 = {
+			isa = PBXGroup;
+			children = (
+				D537C26115D4E6E10049F319 /* Memrise */,
+				D537C27F15D4E6E10049F319 /* MemriseTests */,
+				D537C25A15D4E6E10049F319 /* Frameworks */,
+				D537C25815D4E6E10049F319 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D537C25815D4E6E10049F319 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D537C25715D4E6E10049F319 /* Memrise.app */,
+				D537C27815D4E6E10049F319 /* MemriseTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D537C25A15D4E6E10049F319 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D537C25B15D4E6E10049F319 /* UIKit.framework */,
+				D537C25D15D4E6E10049F319 /* Foundation.framework */,
+				D537C25F15D4E6E10049F319 /* CoreGraphics.framework */,
+				D537C27915D4E6E10049F319 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D537C26115D4E6E10049F319 /* Memrise */ = {
+			isa = PBXGroup;
+			children = (
+				D537C26A15D4E6E10049F319 /* MEMRAppDelegate.h */,
+				D537C26B15D4E6E10049F319 /* MEMRAppDelegate.m */,
+				D537C26D15D4E6E10049F319 /* MainStoryboard.storyboard */,
+				D537C27015D4E6E10049F319 /* MEMRViewController.h */,
+				D537C27115D4E6E10049F319 /* MEMRViewController.m */,
+				D537C26215D4E6E10049F319 /* Supporting Files */,
+			);
+			path = Memrise;
+			sourceTree = "<group>";
+		};
+		D537C26215D4E6E10049F319 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D537C26315D4E6E10049F319 /* Memrise-Info.plist */,
+				D537C26415D4E6E10049F319 /* InfoPlist.strings */,
+				D537C26715D4E6E10049F319 /* main.m */,
+				D537C26915D4E6E10049F319 /* Memrise-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D537C27F15D4E6E10049F319 /* MemriseTests */ = {
+			isa = PBXGroup;
+			children = (
+				D537C28515D4E6E10049F319 /* MemriseTests.h */,
+				D537C28615D4E6E10049F319 /* MemriseTests.m */,
+				D537C28015D4E6E10049F319 /* Supporting Files */,
+			);
+			path = MemriseTests;
+			sourceTree = "<group>";
+		};
+		D537C28015D4E6E10049F319 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D537C28115D4E6E10049F319 /* MemriseTests-Info.plist */,
+				D537C28215D4E6E10049F319 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D537C25615D4E6E10049F319 /* Memrise */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D537C28A15D4E6E10049F319 /* Build configuration list for PBXNativeTarget "Memrise" */;
+			buildPhases = (
+				D537C25315D4E6E10049F319 /* Sources */,
+				D537C25415D4E6E10049F319 /* Frameworks */,
+				D537C25515D4E6E10049F319 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Memrise;
+			productName = Memrise;
+			productReference = D537C25715D4E6E10049F319 /* Memrise.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D537C27715D4E6E10049F319 /* MemriseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D537C28D15D4E6E10049F319 /* Build configuration list for PBXNativeTarget "MemriseTests" */;
+			buildPhases = (
+				D537C27315D4E6E10049F319 /* Sources */,
+				D537C27415D4E6E10049F319 /* Frameworks */,
+				D537C27515D4E6E10049F319 /* Resources */,
+				D537C27615D4E6E10049F319 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D537C27E15D4E6E10049F319 /* PBXTargetDependency */,
+			);
+			name = MemriseTests;
+			productName = MemriseTests;
+			productReference = D537C27815D4E6E10049F319 /* MemriseTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D537C24E15D4E6E10049F319 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MEMR;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = fanstatsic.com;
+			};
+			buildConfigurationList = D537C25115D4E6E10049F319 /* Build configuration list for PBXProject "Memrise" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D537C24C15D4E6E10049F319;
+			productRefGroup = D537C25815D4E6E10049F319 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D537C25615D4E6E10049F319 /* Memrise */,
+				D537C27715D4E6E10049F319 /* MemriseTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D537C25515D4E6E10049F319 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D537C26615D4E6E10049F319 /* InfoPlist.strings in Resources */,
+				D537C26F15D4E6E10049F319 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D537C27515D4E6E10049F319 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D537C28415D4E6E10049F319 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D537C27615D4E6E10049F319 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D537C25315D4E6E10049F319 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D537C26815D4E6E10049F319 /* main.m in Sources */,
+				D537C26C15D4E6E10049F319 /* MEMRAppDelegate.m in Sources */,
+				D537C27215D4E6E10049F319 /* MEMRViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D537C27315D4E6E10049F319 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D537C28715D4E6E10049F319 /* MemriseTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D537C27E15D4E6E10049F319 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D537C25615D4E6E10049F319 /* Memrise */;
+			targetProxy = D537C27D15D4E6E10049F319 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D537C26415D4E6E10049F319 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D537C26515D4E6E10049F319 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D537C26D15D4E6E10049F319 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D537C26E15D4E6E10049F319 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		D537C28215D4E6E10049F319 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D537C28315D4E6E10049F319 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D537C28815D4E6E10049F319 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D537C28915D4E6E10049F319 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D537C28B15D4E6E10049F319 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Memrise/Memrise-Prefix.pch";
+				INFOPLIST_FILE = "Memrise/Memrise-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D537C28C15D4E6E10049F319 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Memrise/Memrise-Prefix.pch";
+				INFOPLIST_FILE = "Memrise/Memrise-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D537C28E15D4E6E10049F319 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Memrise.app/Memrise";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Memrise/Memrise-Prefix.pch";
+				INFOPLIST_FILE = "MemriseTests/MemriseTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		D537C28F15D4E6E10049F319 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Memrise.app/Memrise";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Memrise/Memrise-Prefix.pch";
+				INFOPLIST_FILE = "MemriseTests/MemriseTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D537C25115D4E6E10049F319 /* Build configuration list for PBXProject "Memrise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D537C28815D4E6E10049F319 /* Debug */,
+				D537C28915D4E6E10049F319 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D537C28A15D4E6E10049F319 /* Build configuration list for PBXNativeTarget "Memrise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D537C28B15D4E6E10049F319 /* Debug */,
+				D537C28C15D4E6E10049F319 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D537C28D15D4E6E10049F319 /* Build configuration list for PBXNativeTarget "MemriseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D537C28E15D4E6E10049F319 /* Debug */,
+				D537C28F15D4E6E10049F319 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D537C24E15D4E6E10049F319 /* Project object */;
+}
