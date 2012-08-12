@@ -13,6 +13,7 @@
 
 #define kAnswerCornerRadius     10
 #define kQuestionCornerRadius   20
+#define kViewAnimationDelay     0.3
 
 @interface MEMRQuizViewController ()
 
@@ -56,6 +57,19 @@
     [self formatMenuViews];
     [self configureTouch];
     [self configureHome];
+    [self startQuiz];
+}
+
+
+- (void)startQuiz
+{
+    [self animateViewRandomly:self.questionView withDelay:kViewAnimationDelay];
+    [self animateViewRandomly:self.answer1View withDelay:kViewAnimationDelay];
+    [self animateViewRandomly:self.answer2View withDelay:kViewAnimationDelay];
+    [self animateViewRandomly:self.answer3View withDelay:kViewAnimationDelay];
+    [self animateViewRandomly:self.answer4View withDelay:kViewAnimationDelay];
+    [self animateViewRandomly:self.answer5View withDelay:kViewAnimationDelay];
+    [self animateViewRandomly:self.answer6View withDelay:kViewAnimationDelay];
 }
 
 - (void)pushView

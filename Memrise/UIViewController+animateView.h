@@ -11,6 +11,13 @@
 @interface UIViewController (animateView)
 - (void)animateViewUpFromBottom:(UIView *)sView withDelay:(double)delay;
 - (void)animateViewDownFromTop:(UIView *)sView  withDelay:(double)delay;
+- (void)animateViewLeftFromSide:(UIView *)sView  withDelay:(double)delay;
+- (void)animateViewRightFromSide:(UIView *)sView  withDelay:(double)delay;
+
+- (void)animateViewRandomly:(UIView *)sView withDelay:(double)delay;
+
+
+
 - (void)animateShake:(UIView *)sView;
 - (void)accessDenied:(UITapGestureRecognizer *)gesture;
 

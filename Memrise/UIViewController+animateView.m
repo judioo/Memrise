@@ -56,6 +56,72 @@
     }];
 }
 
+- (void)animateViewLeftFromSide:(UIView *)sView  withDelay:(double)delay
+{
+    if(!sView.superview)
+        return;
+    
+    CGRect currentRect  = [sView frame];
+    
+    // superviews x cords minus sView's width
+    int left            = sView.superview.bounds.origin.x - 
+    currentRect.size.width;
+    
+    sView.frame         = CGRectMake(
+                                     left, 
+                                     currentRect.origin.y, 
+                                     currentRect.size.width, 
+                                     currentRect.size.height);
+    
+    [UIView animateWithDuration:delay animations:^{
+        sView.frame  = currentRect;
+    }];
+}
+
+- (void)animateViewRightFromSide:(UIView *)sView  withDelay:(double)delay
+{
+    if(!sView.superview)
+        return;
+    
+    CGRect currentRect  = [sView frame];
+    
+    // superviews x cords minus sView's width
+    int right           = sView.superview.bounds.origin.x + 
+    sView.superview.bounds.size.width;
+    
+    sView.frame         = CGRectMake(
+                                     right, 
+                                     currentRect.origin.y, 
+                                     currentRect.size.width, 
+                                     currentRect.size.height);
+    
+    [UIView animateWithDuration:delay animations:^{
+        sView.frame  = currentRect;
+    }];
+}
+
+- (void)animateViewRandomly:(UIView *)sView withDelay:(double)delay
+{
+    int choice  = arc4random() % 3;
+    switch (choice) {
+        case 0:
+            [self animateViewUpFromBottom:sView withDelay:delay];
+            break;
+        case 1:
+            [self animateViewDownFromTop:sView withDelay:delay];
+            break;
+        case 2:
+            [self animateViewLeftFromSide:sView withDelay:delay];
+            break;
+        case 3:
+            [self animateViewRightFromSide:sView withDelay:delay];
+            break;
+        default:
+            break;
+    }
+}
+
+
 - (void)animateShake:(UIView *)sView
 {
     CGRect currentRect  = [sView frame];
