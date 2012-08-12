@@ -102,7 +102,7 @@
 
 - (void)animateViewRandomly:(UIView *)sView withDelay:(double)delay
 {
-    int choice  = arc4random() % 3;
+    int choice  = arc4random() % 4;
     switch (choice) {
         case 0:
             [self animateViewUpFromBottom:sView withDelay:delay];
