@@ -38,8 +38,6 @@
 		D537C2C615D672430049F319 /* MEMRQuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D537C2C515D672430049F319 /* MEMRQuizViewController.m */; };
 		D537C2C815D840840049F319 /* purple.png in Resources */ = {isa = PBXBuildFile; fileRef = D537C2C715D840830049F319 /* purple.png */; };
 		D537C2CA15D843F10049F319 /* questions.plist in Resources */ = {isa = PBXBuildFile; fileRef = D537C2C915D843F00049F319 /* questions.plist */; };
-		D537C2CD15D85FF40049F319 /* incorrect.png in Resources */ = {isa = PBXBuildFile; fileRef = D537C2CB15D85FF40049F319 /* incorrect.png */; };
-		D537C2CE15D85FF40049F319 /* correct.png in Resources */ = {isa = PBXBuildFile; fileRef = D537C2CC15D85FF40049F319 /* correct.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,8 +92,6 @@
 		D537C2C515D672430049F319 /* MEMRQuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEMRQuizViewController.m; sourceTree = "<group>"; };
 		D537C2C715D840830049F319 /* purple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = purple.png; sourceTree = "<group>"; };
 		D537C2C915D843F00049F319 /* questions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = questions.plist; sourceTree = "<group>"; };
-		D537C2CB15D85FF40049F319 /* incorrect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = incorrect.png; sourceTree = "<group>"; };
-		D537C2CC15D85FF40049F319 /* correct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = correct.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,8 +173,6 @@
 		D537C26215D4E6E10049F319 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D537C2CB15D85FF40049F319 /* incorrect.png */,
-				D537C2CC15D85FF40049F319 /* correct.png */,
 				D537C2C715D840830049F319 /* purple.png */,
 				D537C2BE15D5A7070049F319 /* spanish.png */,
 				D537C2B615D559360049F319 /* about.png */,
@@ -315,8 +309,6 @@
 				D537C2BF15D5A7080049F319 /* spanish.png in Resources */,
 				D537C2C815D840840049F319 /* purple.png in Resources */,
 				D537C2CA15D843F10049F319 /* questions.plist in Resources */,
-				D537C2CD15D85FF40049F319 /* incorrect.png in Resources */,
-				D537C2CE15D85FF40049F319 /* correct.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
