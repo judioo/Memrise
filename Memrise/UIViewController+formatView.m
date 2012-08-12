@@ -31,4 +31,15 @@
     
     tView.layer.mask        = maskLayer;
 }
+
+- (void)setMenuAsDenied:(UIView *)dView
+{
+    // views cannot share an instance of a gesture recognizer
+    UITapGestureRecognizer *failedtap             = [[UITapGestureRecognizer alloc]
+                                                     initWithTarget:self action:@selector(accessDenied:)];
+    [dView addGestureRecognizer:failedtap];
+}
+
+
+
 @end

@@ -34,7 +34,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self formatSubViews];
+    [self formatMenuViews];
     [self configureTouch];
     [self setImageLink];
     [self animateViews];
@@ -63,7 +63,7 @@
 }
 
 
-- (void)formatSubViews
+- (void)formatMenuViews
 {
     [self roundViewsBottomCorner:self.homeView withRadius:5.0f];
     [self roundViewsBottomCorner:self.CommunityView withRadius:5.0f];
@@ -89,18 +89,6 @@
     [self setMenuAsDenied:self.aboutView];
 }
 
-- (void)setMenuAsDenied:(UIView *)dView
-{
-    // views cannot share an instance of a gesture recognizer
-    UITapGestureRecognizer *failedtap             = [[UITapGestureRecognizer alloc]
-                                                     initWithTarget:self action:@selector(accessDenied:)];
-    [dView addGestureRecognizer:failedtap];
-}
-
-- (void)accessDenied:(UITapGestureRecognizer *)gesture
-{
-    [self animateShake:gesture.view];
-}
 
 - (void)viewDidUnload
 {

@@ -93,4 +93,12 @@
         item.transform = CGAffineTransformIdentity;
     }
 }
+
+- (void)accessDenied:(UITapGestureRecognizer *)gesture
+{
+    [self animateShake:gesture.view];
+}
+
+
+
 @end

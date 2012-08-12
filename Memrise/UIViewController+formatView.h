@@ -11,4 +11,8 @@
 @interface UIViewController (formatView)
 - (void)roundViewsCorner:(UIView *)tView withRadius:(float)rad;
 - (void)roundViewsBottomCorner:(UIView *)tView withRadius:(float)rad;
+
+- (void)setMenuAsDenied:(UIView *)dView;
+
+
 @end
