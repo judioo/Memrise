@@ -41,6 +41,9 @@
 @synthesize aboutView;
 @synthesize profileView;
 
+@synthesize questionsDictionary;
+@synthesize allPossibleQuestions;
+@synthesize answerToQuestion;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -60,9 +63,63 @@
     [self startQuiz];
 }
 
+- (void)loadQuestions
+{
+    NSBundle *bundle    = [NSBundle mainBundle];
+    NSURL *plistURL     = [bundle URLForResource:@"questions"
+                                   withExtension:@"plist"];
+    
+    self.questionsDictionary    = [NSDictionary
+                                   dictionaryWithContentsOfURL:plistURL];
+    self.allPossibleQuestions   = [[NSArray alloc]
+                                   initWithArray:[self.questionsDictionary allKeys]];
+}
+
+- (void)configureQuestion
+{
+    [self loadQuestions];
+    
+    int seed                = [self.allPossibleQuestions count];
+    int index               = arc4random() % seed;
+    NSLog(@"%d, %d",index,seed);   
+    NSString *question      = [self.allPossibleQuestions objectAtIndex:index];
+    self.questionLabel.text = question;
+    
+    NSArray *pAnswersArray  = [self.questionsDictionary objectForKey:question];
+    self.answerToQuestion   = [pAnswersArray objectAtIndex:0];
+    
+    NSMutableSet *possibleAnswers  = [[NSMutableSet alloc] initWithArray:pAnswersArray];
+    [self populatePossibleAnswers:possibleAnswers];
+}
+
+- (void)populatePossibleAnswers:(NSMutableSet *)pAnswers
+{
+    [self populatePossibleAnswerLabel:pAnswers forLabel:answer1Label];
+    [self populatePossibleAnswerLabel:pAnswers forLabel:answer2Label];
+    [self populatePossibleAnswerLabel:pAnswers forLabel:answer3Label];
+    [self populatePossibleAnswerLabel:pAnswers forLabel:answer4Label];
+    [self populatePossibleAnswerLabel:pAnswers forLabel:answer5Label];
+    [self populatePossibleAnswerLabel:pAnswers forLabel:answer6Label];
+}
+
+- (void)populatePossibleAnswerLabel:(NSMutableSet *)pAnswers forLabel:(UILabel *)label
+{
+    NSString *anAnswer = [pAnswers anyObject];
+    if (!anAnswer)
+        return;
+    
+    label.text  = anAnswer;
+    
+    [pAnswers removeObject:anAnswer];
+}
+
 
 - (void)startQuiz
 {
+    [self loadQuestions];
+    [self configureQuestion];
+    
+    
     [self animateViewRandomly:self.questionView withDelay:kViewAnimationDelay];
     [self animateViewRandomly:self.answer1View withDelay:kViewAnimationDelay];
     [self animateViewRandomly:self.answer2View withDelay:kViewAnimationDelay];
@@ -138,5 +195,4 @@
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
-
 @end

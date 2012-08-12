@@ -38,6 +38,7 @@
 @property (strong, nonatomic) IBOutlet UIView *aboutView;
 @property (strong, nonatomic) IBOutlet UIView *profileView;
 
-
-
+@property (strong, nonatomic) NSDictionary *questionsDictionary;
+@property (strong, nonatomic) NSArray *allPossibleQuestions;
+@property (strong, nonatomic) NSString *answerToQuestion;
 @end
