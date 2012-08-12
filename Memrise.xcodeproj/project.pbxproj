@@ -35,6 +35,7 @@
 		D537C2BF15D5A7080049F319 /* spanish.png in Resources */ = {isa = PBXBuildFile; fileRef = D537C2BE15D5A7070049F319 /* spanish.png */; };
 		D537C2C215D5AE100049F319 /* UIViewController+formatView.m in Sources */ = {isa = PBXBuildFile; fileRef = D537C2C115D5AE100049F319 /* UIViewController+formatView.m */; };
 		D537C2C315D5B78A0049F319 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D537C29015D4EB400049F319 /* QuartzCore.framework */; };
+		D537C2C615D672430049F319 /* MEMRQuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D537C2C515D672430049F319 /* MEMRQuizViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,8 @@
 		D537C2BE15D5A7070049F319 /* spanish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spanish.png; sourceTree = "<group>"; };
 		D537C2C015D5AE100049F319 /* UIViewController+formatView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+formatView.h"; sourceTree = "<group>"; };
 		D537C2C115D5AE100049F319 /* UIViewController+formatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+formatView.m"; sourceTree = "<group>"; };
+		D537C2C415D672430049F319 /* MEMRQuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEMRQuizViewController.h; sourceTree = "<group>"; };
+		D537C2C515D672430049F319 /* MEMRQuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEMRQuizViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +158,8 @@
 				D537C2A515D553D10049F319 /* MEMRChoiceViewController.h */,
 				D537C2A615D553D10049F319 /* MEMRChoiceViewController.m */,
 				D537C26D15D4E6E10049F319 /* MainStoryboard.storyboard */,
+				D537C2C415D672430049F319 /* MEMRQuizViewController.h */,
+				D537C2C515D672430049F319 /* MEMRQuizViewController.m */,
 				D537C2BD15D56C560049F319 /* Categories */,
 				D537C26215D4E6E10049F319 /* Supporting Files */,
 			);
@@ -336,6 +341,7 @@
 				D537C2A715D553D10049F319 /* MEMRChoiceViewController.m in Sources */,
 				D537C2BC15D56BE70049F319 /* UIViewController+animateView.m in Sources */,
 				D537C2C215D5AE100049F319 /* UIViewController+formatView.m in Sources */,
+				D537C2C615D672430049F319 /* MEMRQuizViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
