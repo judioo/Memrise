@@ -13,7 +13,7 @@
 
 #define kAnswerCornerRadius     10
 #define kQuestionCornerRadius   20
-#define kViewAnimationDelay     0.3
+#define kViewAnimationDelay     0.9
 
 @interface MEMRQuizViewController ()
 
