@@ -81,7 +81,7 @@
     
     int seed                = [self.allPossibleQuestions count];
     int index               = arc4random() % seed;
-
+    NSLog(@"%d, %d",index,seed);   
     NSString *question      = [self.allPossibleQuestions objectAtIndex:index];
     self.questionLabel.text = question;
     
@@ -127,27 +127,6 @@
     [self animateViewRandomly:self.answer4View withDelay:kViewAnimationDelay];
     [self animateViewRandomly:self.answer5View withDelay:kViewAnimationDelay];
     [self animateViewRandomly:self.answer6View withDelay:kViewAnimationDelay];
-    
-    [self attachViewRecognizer:answer1View];
-    [self attachViewRecognizer:answer2View];
-    [self attachViewRecognizer:answer3View];
-    [self attachViewRecognizer:answer4View];
-    [self attachViewRecognizer:answer5View];
-    [self attachViewRecognizer:answer6View];
-}
-
-- (void)isAnswerCorrect:(UIGestureRecognizer *)gesture
-{
-    UIView *sView   = [gesture view];
-    UILabel *sLabel = [sView.subviews objectAtIndex:0];
-    
-    if ([self.answerToQuestion isEqualToString:sLabel.text]) {
-        // match
-        sView.backgroundColor   = [UIColor greenColor];
-        sView.
-    } else {
-        sView.backgroundColor   = [UIColor redColor];
-    }
 }
 
 - (void)pushView
@@ -162,16 +141,6 @@
     
     [self.homeView addGestureRecognizer:homeTap];   
 }
-
-- (void)attachViewRecognizer:(UIView *)sView
-{   
-    UITapGestureRecognizer *guesture        = [[UITapGestureRecognizer alloc]
-                                               initWithTarget:self action:@selector(isAnswerCorrect:)];
-    
-    
-    [sView addGestureRecognizer:guesture];    
-}
-
      
 - (void)formatMenuViews
 {
