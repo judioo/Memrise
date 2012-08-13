@@ -104,7 +104,6 @@
     // check that we have not seen all the questions
     if ([self.askedQuestions count] == [self.allPossibleQuestions count]) {
         [self.askedQuestions removeAllObjects];
-        NSLog(@"resetting askedQuestions to empty");
     }
     
     // have we asked this question before
