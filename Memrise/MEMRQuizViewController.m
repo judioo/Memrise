@@ -14,8 +14,12 @@
 #define kAnswerCornerRadius     10
 #define kQuestionCornerRadius   20
 #define kViewAnimationDelay     0.9
+#define kCorrectImageTag        1
+#define kIncorrectImageTag      2
 
 @interface MEMRQuizViewController ()
+@property (strong, nonatomic) UIImage *correctImage;
+@property (strong, nonatomic) UIImage *incorrectImage;
 
 @end
 
@@ -45,6 +49,9 @@
 @synthesize allPossibleQuestions;
 @synthesize answerToQuestion;
 
+@synthesize correctImage;
+@synthesize incorrectImage;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -57,10 +64,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self loadImages];
+    [self addImagesToAnswerViews];
+    [self loadQuestions];
+
     [self formatMenuViews];
     [self configureTouch];
     [self configureHome];
     [self startQuiz];
+}
+
+- (void)loadImages
+{
+    self.correctImage   = [UIImage imageNamed:@"correct.png"];
+    self.incorrectImage = [UIImage imageNamed:@"incorrect.png"];
 }
 
 - (void)loadQuestions
@@ -76,9 +93,7 @@
 }
 
 - (void)configureQuestion
-{
-    [self loadQuestions];
-    
+{    
     int seed                = [self.allPossibleQuestions count];
     int index               = arc4random() % seed;
 
@@ -116,9 +131,9 @@
 
 - (void)startQuiz
 {
-    [self loadQuestions];
+    [self resetAllAnswersViews];
     [self configureQuestion];
-    
+
     
     [self animateViewRandomly:self.questionView withDelay:kViewAnimationDelay];
     [self animateViewRandomly:self.answer1View withDelay:kViewAnimationDelay];
@@ -136,6 +151,7 @@
     [self attachViewRecognizer:answer6View];
 }
 
+
 - (void)isAnswerCorrect:(UIGestureRecognizer *)gesture
 {
     UIView *sView   = [gesture view];
@@ -144,10 +160,71 @@
     if ([self.answerToQuestion isEqualToString:sLabel.text]) {
         // match
         sView.backgroundColor   = [UIColor greenColor];
-        sView.
+        [self displayView:sView withTag:kCorrectImageTag];
+        [self performSelector:@selector(startQuiz) 
+                   withObject:nil 
+                   afterDelay:2.0];
     } else {
         sView.backgroundColor   = [UIColor redColor];
+        [self displayView:sView withTag:kIncorrectImageTag];
     }
+}
+
+- (void)displayView:(UIView *)sView withTag:(int)number
+{
+    [[sView viewWithTag:number] setHidden:NO];
+}
+
+- (void)addImagesToAnswerViews
+{
+    [self addImage:self.correctImage toView:self.answer1View withTag:kCorrectImageTag];
+    [self addImage:self.correctImage toView:self.answer2View withTag:kCorrectImageTag];
+    [self addImage:self.correctImage toView:self.answer3View withTag:kCorrectImageTag];
+    [self addImage:self.correctImage toView:self.answer4View withTag:kCorrectImageTag];
+    [self addImage:self.correctImage toView:self.answer5View withTag:kCorrectImageTag];
+    [self addImage:self.correctImage toView:self.answer6View withTag:kCorrectImageTag];
+
+    [self addImage:self.incorrectImage toView:self.answer1View withTag:kIncorrectImageTag];
+    [self addImage:self.incorrectImage toView:self.answer2View withTag:kIncorrectImageTag];
+    [self addImage:self.incorrectImage toView:self.answer3View withTag:kIncorrectImageTag];
+    [self addImage:self.incorrectImage toView:self.answer4View withTag:kIncorrectImageTag];
+    [self addImage:self.incorrectImage toView:self.answer5View withTag:kIncorrectImageTag];
+    [self addImage:self.incorrectImage toView:self.answer6View withTag:kIncorrectImageTag];
+}
+
+- (void)resetAllAnswersViews
+{
+    [self resetView:self.answer1View];
+    [self resetView:self.answer2View];
+    [self resetView:self.answer3View];
+    [self resetView:self.answer4View];
+    [self resetView:self.answer5View];
+    [self resetView:self.answer6View];
+}
+
+- (void)resetView:(UIView *)sView
+{
+    sView.backgroundColor   = [UIColor whiteColor];
+    [[sView viewWithTag:kCorrectImageTag] setHidden:YES];
+    [[sView viewWithTag:kIncorrectImageTag] setHidden:YES];
+}
+
+- (void)addImageToView:(UIView *)sView 
+{
+    [self addImage:self.incorrectImage toView:sView withTag:kIncorrectImageTag];
+    [self addImage:self.correctImage toView:sView withTag:kCorrectImageTag];
+}
+
+- (void)addImage:(UIImage *)image toView:(UIView *)sView withTag:(int)number
+{
+    UIImageView *iv = [[UIImageView alloc]
+                       initWithImage:image];
+    iv.frame        = CGRectMake(sView.bounds.size.width - 44, 
+                                 0,44, 44);
+    iv.tag          = number;
+
+    
+    [sView addSubview:iv];
 }
 
 - (void)pushView
