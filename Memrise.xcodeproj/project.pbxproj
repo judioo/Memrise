@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D52D852C15D893A800B49AF4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D52D852B15D893A800B49AF4 /* README.md */; };
 		D537C25C15D4E6E10049F319 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D537C25B15D4E6E10049F319 /* UIKit.framework */; };
 		D537C25E15D4E6E10049F319 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D537C25D15D4E6E10049F319 /* Foundation.framework */; };
 		D537C26015D4E6E10049F319 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D537C25F15D4E6E10049F319 /* CoreGraphics.framework */; };
@@ -53,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D52D852B15D893A800B49AF4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		D537C25715D4E6E10049F319 /* Memrise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memrise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D537C25B15D4E6E10049F319 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D537C25D15D4E6E10049F319 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -127,6 +129,7 @@
 		D537C24C15D4E6E10049F319 = {
 			isa = PBXGroup;
 			children = (
+				D52D852B15D893A800B49AF4 /* README.md */,
 				D537C26115D4E6E10049F319 /* Memrise */,
 				D537C27F15D4E6E10049F319 /* MemriseTests */,
 				D537C25A15D4E6E10049F319 /* Frameworks */,
@@ -317,6 +320,7 @@
 				D537C2CA15D843F10049F319 /* questions.plist in Resources */,
 				D537C2CD15D85FF40049F319 /* incorrect.png in Resources */,
 				D537C2CE15D85FF40049F319 /* correct.png in Resources */,
+				D52D852C15D893A800B49AF4 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,6 +531,7 @@
 				D537C28C15D4E6E10049F319 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D537C28D15D4E6E10049F319 /* Build configuration list for PBXNativeTarget "MemriseTests" */ = {
 			isa = XCConfigurationList;
@@ -535,6 +540,7 @@
 				D537C28F15D4E6E10049F319 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
