@@ -48,6 +48,7 @@
 @synthesize questionsDictionary;
 @synthesize allPossibleQuestions;
 @synthesize answerToQuestion;
+@synthesize askedQuestions;
 
 @synthesize correctImage;
 @synthesize incorrectImage;
@@ -63,6 +64,8 @@
 
 - (void)viewDidLoad
 {
+    self.askedQuestions     = [NSMutableArray array];
+    
     [super viewDidLoad];
     [self loadImages];
     [self addImagesToAnswerViews];
@@ -96,12 +99,30 @@
 {    
     int seed                = [self.allPossibleQuestions count];
     int index               = arc4random() % seed;
-
     NSString *question      = [self.allPossibleQuestions objectAtIndex:index];
-    self.questionLabel.text = question;
+    
+    // check that we have not seen all the questions
+    if ([self.askedQuestions count] == [self.allPossibleQuestions count]) {
+        [self.askedQuestions removeAllObjects];
+        NSLog(@"resetting askedQuestions to empty");
+    }
+    
+    // have we asked this question before
+    for (NSString *previouslyAskedQuestion in self.askedQuestions) {
+        if ([previouslyAskedQuestion isEqualToString:question]) {
+            [self configureQuestion];
+            return;
+        }
+    }
+    
+    // if here we have never asked this question
+    [self.askedQuestions addObject:question];
     
     NSArray *pAnswersArray  = [self.questionsDictionary objectForKey:question];
-    self.answerToQuestion   = [pAnswersArray objectAtIndex:0];
+    NSString *correctAnswer = [pAnswersArray objectAtIndex:0];
+    
+    self.questionLabel.text = question;
+    self.answerToQuestion   = correctAnswer;
     
     NSMutableSet *possibleAnswers  = [[NSMutableSet alloc] initWithArray:pAnswersArray];
     [self populatePossibleAnswers:possibleAnswers];

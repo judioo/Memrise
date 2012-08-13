@@ -41,4 +41,6 @@
 @property (strong, nonatomic) NSDictionary *questionsDictionary;
 @property (strong, nonatomic) NSArray *allPossibleQuestions;
 @property (strong, nonatomic) NSString *answerToQuestion;
+@property (strong, nonatomic) NSMutableArray *askedQuestions;
+
 @end
