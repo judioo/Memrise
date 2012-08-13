@@ -119,9 +119,11 @@
 
 - (void)populatePossibleAnswerLabel:(NSMutableSet *)pAnswers forLabel:(UILabel *)label
 {
-    NSString *anAnswer = [pAnswers anyObject];
-    if (!anAnswer)
+    if (![pAnswers count])
         return;
+    
+    int number          = arc4random() % [pAnswers count];
+    NSString *anAnswer  = [[pAnswers allObjects] objectAtIndex:number];
     
     label.text  = anAnswer;
     
