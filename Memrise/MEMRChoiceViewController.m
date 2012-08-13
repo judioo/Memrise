@@ -87,6 +87,7 @@
     [self setMenuAsDenied:self.CommunityView];
     [self setMenuAsDenied:self.topicsView];
     [self setMenuAsDenied:self.aboutView];
+    [self setMenuAsDenied:self.profileView];
 }
 
 
