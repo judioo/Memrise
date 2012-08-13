@@ -11,6 +11,24 @@
 		<string>table</string>
 		<string>company</string>
 	</array>
+	<key>hablas inglés?</key>
+	<array>
+		<string>do you speak English</string>
+		<string>can I buy milk</string>
+		<string>Yes I like chicken</string>
+		<string>sleep now</string>
+		<string>plus 2</string>
+		<string>click</string>
+	</array>
+	<key>disculpa</key>
+	<array>
+		<string>excuse me</string>
+		<string>hello</string>
+		<string>come fish with me</string>
+		<string>cheese</string>
+		<string>where is my wig</string>
+		<string>ay caramba</string>
+	</array>
 	<key>la cerveza</key>
 	<array>
 		<string>beer</string>
