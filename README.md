@@ -1,4 +1,4 @@
-An example of how [enter link description here][1] IOS app might look
+An example of how [Memrise][1] IOS app might look
 Built a demo over the weekend. 
 
 
